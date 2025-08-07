@@ -243,8 +243,10 @@ type Config struct {
 	}
 	// ---------- wechat ----------
 	Wechat struct {
-		AppID     string // 微信appid 在开放平台内
-		AppSecret string
+		AppID         string // 微信appid 在开放平台内
+		AppSecret     string
+		AppIDSelf     string // 微信appid 在开放平台内
+		AppSecretSelf string
 	}
 
 	// ---------- tracing ----------
