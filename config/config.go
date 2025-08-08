@@ -750,6 +750,8 @@ func (c *Config) ConfigureWithViper(vp *viper.Viper) {
 	//#################### weixin ####################
 	c.Wechat.AppID = c.getString("wechat.appID", c.Wechat.AppID)
 	c.Wechat.AppSecret = c.getString("wechat.appSecret", c.Wechat.AppSecret)
+	c.Wechat.AppIDSelf = c.getString("wechat.appIDSelf", c.Wechat.AppIDSelf)
+	c.Wechat.AppSecretSelf = c.getString("wechat.appSecretSelf", c.Wechat.AppSecretSelf)
 
 	//#################### tracing ####################
 	c.Tracing.On = c.getBool("tracing.on", c.Tracing.On)
